@@ -29,8 +29,8 @@ if ( ! $post->post_excerpt ) return;
     		$codeContents .= ' Permalink: '.get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['$product->id'] ))."\n";
 		$codeContents .= ' Thumbnail: '.$image_link."\n";
 		$codeContents .= '-------------------------'; 
-		$path = 'QRtmp/tmp_'.md5($product->id).'.png';
-		QRcode::png($codeContents, $path, QR_ECLEVEL_L, 3); 
-		echo '<img src="http://54.229.220.96/'.$path.'" />';
+//		$path = 'QRtmp/tmp_'.md5($product->id).'.png';
+//		QRcode::png($codeContents, $path, QR_ECLEVEL_L, 3); 
+//		echo '<img src="http://54.229.220.96/'.$path.'" />';
 	?>
 </div>
