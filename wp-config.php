@@ -16,19 +16,17 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'hack_store');
+//define('DB_NAME', 'hack_store');
+define('DB_NAME', 'hackstorePayPal');
 
 /** MySQL database username */
-//define('DB_USER', 'wp');
 define('DB_USER', 'b49c95cbc75437');
 
 /** MySQL database password */
-//define('DB_PASSWORD', 'hACK?sto');
 define('DB_PASSWORD', '14c2974a');
 
 /** MySQL hostname */
-//define('DB_HOST', 'localhost');
-//define('DB_HOST','rgsdhf7qqi.database.windows.net');
+//define('DB_HOST','eu-cdbr-azure-west-b.cloudapp.net');
 define('DB_HOST','eu-cdbr-azure-west-b.cloudapp.net');
 
 /** Database Charset to use in creating database tables. */
