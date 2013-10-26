@@ -30,8 +30,7 @@ if ( ! $post->post_excerpt ) return;
 		$codeContents .= ' Thumbnail: '.$image_link."\n";
 		$codeContents .= '-------------------------'; 
 		$path = 'QRtmp/tmp_'.md5($product->id).'.png';
-		echo $path;
-//		QRcode::png($codeContents, $path, QR_ECLEVEL_L, 3); 
-//		echo '<img src="http://54.229.220.96/'.$path.'" />';
+		QRcode::png($codeContents, $path, QR_ECLEVEL_L, 3); 
+		echo '<img src="'.$path.'" />';
 	?>
 </div>
