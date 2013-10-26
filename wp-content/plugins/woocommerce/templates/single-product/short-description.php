@@ -31,6 +31,7 @@ if ( ! $post->post_excerpt ) return;
 		$codeContents .= '-------------------------'; 
 		$path = 'QRtmp/tmp_'.md5($product->id).'.png';
 		QRcode::png($codeContents, $path, QR_ECLEVEL_L, 3); 
+		echo 'http://hackstore.azurewebsites.net/'.$path;
 		echo '<img src="http://hackstore.azurewebsites.net/'.$path.'" />';
 	?>
 </div>
